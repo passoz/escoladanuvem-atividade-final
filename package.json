@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/parcel build"
+    "build": "./node_modules/.bin/parcel build src/index.html --dist-dir dist --public-url '.'"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.6.2"
+    "@parcel/transformer-sass": "^2.7.0"
   },
   "dependencies": {
     "parcel": "^2.7.0"
