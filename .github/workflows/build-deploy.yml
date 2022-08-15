@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: yarn build
       - name: Deploy
-        run: aws s3 sync ./dist s3://github-workflow-s3-3experts-test
+        run: aws s3 sync ./dist s3://edn-final-01
