@@ -15,34 +15,34 @@
 
 <body>
 
-  <nav id="nav-buttons">
 
-    <a href="#" id="back">
-      <i class="lni lni-chevron-left"></i>
-    </a>
+  <a href="#" id="up" onmouseenter="showUp()" onmouseleave="hiddenUp()">
+    <i class="lni lni-chevron-up-circle"></i>
+    <p class="hidden-text-menu">Início</p>
+  </a>
 
-    <a href="#">
-      <i class="lni lni-chevron-up"></i>
-    </a>
+  <a href="index.html" id="back" onmouseenter="showBack()" onmouseleave="hiddenBack()">
+    <i class="lni lni-chevron-left-circle"></i>
+    <p class="hidden-text-menu">Voltar</p>
+  </a>
 
-    <a href="#">
-      <i class="lni lni-chevron-up"></i>
-    </a>
+  <a href="https://github.com/passoz" id="github" onmouseenter="showGithub()" onmouseleave="hiddenGithub()">
+    <i class="lni lni-github-original"></i>
+    <p class="hidden-text-menu">Github</p>
+  </a>
 
-    <a href="#">
-      <i class="lni lni-chevron-up"></i>
-    </a>
+  <a href="https://linkedin.com/in/fernandohpassos" id="linkedin" onmouseenter="showLinkedin()"
+    onmouseleave="hiddenLinkedin()">
+    <i class="lni lni-linkedin-original"></i>
+    <p class="hidden-text-menu">Linkedin</p>
+  </a>
 
-    <a href="#">
-      <i class="lni lni-chevron-up"></i>
-    </a>
 
-  </nav>
   <header>
     <div class="left left-photo-section left-bright">
       <img src="assets/photo.jpg" alt="Foto do Fernando" class="photo">
     </div>
-    <div class="right right-bright">
+    <div class="right-header right-bright">
       <div>
         <div class="feature">
           <h1>
@@ -96,7 +96,7 @@
 
     </div>
     <div class="right right-dark">
-      <p>
+      <p class="story">
         Essa estória começa lá em 1993 com um cara chamado Fernando. Certa vez o Fernando estava no Rio de Janeiro e
         depois da escola pegou um ônibus e foi parar na feira do Livro, lá no Riocentro. E então aconteceu algo que iria
         mudar sua vida para sempre: O Fernando viu e usou pela primeira vez um computador. Foi paixão à primeira vista.
@@ -236,7 +236,153 @@
       </p>
 
     </div>
-    <div class="right right-dark"></div>
+    <div class="right right-dark skills-block">
+
+
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">80%</span>
+          <span class="skill-title">NODEJS</span>
+        </span>
+        <span class="skill-progress-80"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">70%</span>
+          <span class="skill-title">HTML</span>
+        </span>
+        <span class="skill-progress-70"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">50%</span>
+          <span class="skill-title">CSS</span>
+        </span>
+        <span class="skill-progress-50"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">70%</span>
+          <span class="skill-title">JAVASCRIPT</span>
+        </span>
+        <span class="skill-progress-70"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">60%</span>
+          <span class="skill-title">PYTHON</span>
+        </span>
+        <span class="skill-progress-60"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">60%</span>
+          <span class="skill-title">JAVA</span>
+        </span>
+        <span class="skill-progress-60"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">80%</span>
+          <span class="skill-title">DOCKER</span>
+        </span>
+        <span class="skill-progress-80"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">70%</span>
+          <span class="skill-title">MYSQL</span>
+        </span>
+        <span class="skill-progress-70"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">40%</span>
+          <span class="skill-title">MONGODB</span>
+        </span>
+        <span class="skill-progress-40"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">40%</span>
+          <span class="skill-title">REACTJS</span>
+        </span>
+        <span class="skill-progress-40"></span>
+      </div>
+
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">50%</span>
+          <span class="skill-title">GOLANG</span>
+        </span>
+        <span class="skill-progress-50"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">40%</span>
+          <span class="skill-title">RABBITMQ</span>
+        </span>
+        <span class="skill-progress-40"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">80%</span>
+          <span class="skill-title">DOCKER</span>
+        </span>
+        <span class="skill-progress-80"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">60%</span>
+          <span class="skill-title">KUBERNETES</span>
+        </span>
+        <span class="skill-progress-60"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">90%</span>
+          <span class="skill-title">LINUX</span>
+        </span>
+        <span class="skill-progress-90"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">30%</span>
+          <span class="skill-title">TERRAFORM</span>
+        </span>
+        <span class="skill-progress-30"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">30%</span>
+          <span class="skill-title">ANSIBLE</span>
+        </span>
+        <span class="skill-progress-30"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">60%</span>
+          <span class="skill-title">IOT/MQTT/ARDUINO</span>
+        </span>
+        <span class="skill-progress-60"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">40%</span>
+          <span class="skill-title">AWS</span>
+        </span>
+        <span class="skill-progress-40"></span>
+      </div>
+      <div class="skill-block">
+        <span class="skill">
+          <span class="percentage">80%</span>
+          <span class="skill-title">DOCKER</span>
+        </span>
+        <span class="skill-progress-80"></span>
+      </div>
+
+
+    </div>
 
   </section>
 
@@ -246,7 +392,9 @@
         EXPERIÊNCIA
       </span>
     </div>
-    <div class="right right-bright"></div>
+    <div class="right right-bright">
+
+    </div>
 
   </section>
 
@@ -286,6 +434,42 @@
 
   </footer>
 
+  <script>
+    function showUp() {
+      document.getElementById("up").querySelector('p').style.display = "block"
+    }
+    function hiddenUp() {
+      document.getElementById("up").querySelector('p').style.display = "none"
+    }
+
+
+    function showBack() {
+      document.getElementById("back").querySelector('p').style.display = "block"
+    }
+
+    function showGithub() {
+      document.getElementById("github").querySelector('p').style.display = "block"
+    }
+
+    function showLinkedin() {
+      document.getElementById("linkedin").querySelector('p').style.display = "block"
+    }
+
+    function hiddenBack() {
+      document.getElementById("back").querySelector('p').style.display = "none"
+    }
+
+    function hiddenGithub() {
+      document.getElementById("github").querySelector('p').style.display = "none"
+    }
+
+    function hiddenLinkedin() {
+      document.getElementById("linkedin").querySelector('p').style.display = "none"
+    }
+
+
+
+  </script>
 </body>
 
 </html>

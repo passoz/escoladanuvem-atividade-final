@@ -37,6 +37,9 @@ body {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  p{
+    display: block;
+  }
 }
 
 header{
@@ -124,7 +127,7 @@ section{
 
 }
 
-.right {
+.right-header {
   width: 65%;
   min-height: 100%;
   text-align: left;
@@ -139,6 +142,18 @@ section{
     font-size: 0.85em;
   }
 }
+
+.right {
+  width: 65%;
+  min-height: 100%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
 
 .expertise{
   display: flex;
@@ -213,22 +228,65 @@ section{
   align-items: center;
 }
 
-#nav-buttons{
+ 
+
+%nav-button{
   position: fixed;
   right: 30px;
-  bottom: 30px;
-  text-align: center;
-  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  i{
-  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   width: 50px;
-  margin-top: 20px;
+  height: 50px;
   background-color: $main-color;
+  color: white;
+  text-decoration: none;
+  transition: ease 0.5s;
+  &:hover{
+    width: 150px;
+    transition: ease 0.5s;
+  }
+  i{
     color: white;
   }
+  .hidden-text-menu{
+    display: none;
+    margin-left: 20px;
+    transition: ease 0.8s;
+    &:hover{
+      display: unset;
+      color: white;
+      transition: ease 0.8s;
+    }
+  }
 }
+
+.story{
+  max-width: 90%
+}
+
+#up{
+  @extend %nav-button;
+  bottom: 400px;
+}
+
+#back{
+  @extend %nav-button;
+  bottom: 300px;
+}
+
+#github{
+  bottom: 200px;
+  @extend %nav-button;
+}
+
+#linkedin{
+  bottom: 100px;
+  @extend %nav-button;
+}
+
+
 
 .expert{
 
@@ -271,3 +329,83 @@ section{
 
 }
 
+.skills-block{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .skill-block{
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    .skill{
+      .percentage{
+        margin-right: 20px;
+        @extend %block-title-style;
+        color: $main-color;
+      }
+      .skill-title{
+        @extend %block-title-style;
+      }
+    }
+    $skill-progress-thickness: 6px;
+    .skill-progress-10{
+      height: $skill-progress-thickness; 
+      width: 10%;
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-20{
+      height: $skill-progress-thickness; 
+      width: 20%;
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-30{
+      width: 30%;
+      height: $skill-progress-thickness; 
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-40{
+      width: 40%;
+      height: $skill-progress-thickness; 
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-50{
+      height: $skill-progress-thickness; 
+      width: 50%;
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-60{
+      width: 60%;
+      height: $skill-progress-thickness; 
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-70{
+      width: 70%;
+      height: $skill-progress-thickness; 
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-80{
+      width: 80%;
+      height: $skill-progress-thickness; 
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+    .skill-progress-90{
+      height: $skill-progress-thickness; 
+      width: 90%;
+      margin-top: 20px;
+      background-color: $main-color;
+    }
+
+  }
+}
