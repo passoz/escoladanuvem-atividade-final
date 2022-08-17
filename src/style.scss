@@ -37,9 +37,11 @@ body {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  scrollbar-face-color: white;
   p{
     display: block;
   }
+  
 }
 
 header{
@@ -407,5 +409,55 @@ section{
       background-color: $main-color;
     }
 
+  }
+}
+
+
+.experience-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .vertical-bar-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .vertical-bar-ball{
+      height: 9px;
+      width: 9px;
+      margin-top: 10px;
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+    .vertical-bar{
+      height: 180px;
+      width: 2px;
+      margin-top: 10px;
+      margin-left: 4px;
+      background-color: $font-color;
+    }
+  }
+  .experience-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    width: 50%;
+    .experience-time{
+      font-size: 0.6em;
+      
+    }
+    .experience-company{
+      @extend %block-title-style
+    }
+    .experience-name{
+      @extend %block-text-style
+    }
+    .experience-place{
+    }
+  }
+  .experience-description{
+    width: 60%;
+    margin-right: 80px;
+    @extend %block-text-style
   }
 }
