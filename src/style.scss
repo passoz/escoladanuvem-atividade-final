@@ -184,6 +184,7 @@ section{
 .info-bar{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .info{
@@ -195,8 +196,18 @@ section{
   margin-right: 60px;
   p{
     font-size: 15px;
+    margin-bottom: 10px;
     &:first-child{
       font-weight: bold;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: $font-color;
+    font-size: 15px;
+    margin-top: -5px;
+    &:hover{
+      color: white;
     }
   }
 }
