@@ -9,6 +9,7 @@ $font-color: #8d99ae;
 $background-color-darkest: #2b2d42;
 $background-color-darker: #323449;
 $background-color-lighter: #3d3f54;
+$background-color-almost-black: #191A26;
 
 $left-bright-color: $background-color-darker;
 $right-bright-color: $background-color-lighter;
@@ -265,7 +266,8 @@ section{
 }
 
 .story{
-  max-width: 90%
+  max-width: 90%;
+  @extend %block-text-style
 }
 
 #up{
@@ -430,7 +432,7 @@ section{
     }
     .vertical-bar{
       height: 180px;
-      width: 2px;
+      width: 1px;
       margin-top: 10px;
       margin-left: 4px;
       background-color: $font-color;
@@ -453,11 +455,44 @@ section{
       @extend %block-text-style
     }
     .experience-place{
+      font-size: 0.6em;
     }
   }
   .experience-description{
     width: 60%;
     margin-right: 80px;
-    @extend %block-text-style
+    font-size: 0.7em;
+    //@extend %block-text-style
   }
+}
+
+.education-group{
+  margin-bottom: 20px;
+  b{
+    font-size: 0.8em;
+  }
+  p{
+    font-size: 0.7em;
+  }
+}
+
+.courses{
+  width: 90%;
+  h3{
+    @extend %block-title-style
+  }
+  ul{
+    li{
+      font-size: 0.7em;
+    }
+  }
+}
+
+footer{
+  background-color: $background-color-almost-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  height: 100px;
 }
