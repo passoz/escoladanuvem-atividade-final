@@ -9,6 +9,7 @@
     "@parcel/transformer-sass": "^2.7.0"
   },
   "dependencies": {
+    "global": "^4.4.0",
     "parcel": "^2.7.0"
   }
 }
